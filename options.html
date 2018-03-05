@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Generate Custom QR Code</title>
+    <!-- Bootstrap core CSS -->
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/album.css" rel="stylesheet">
+    <style>#qrcode{margin: 10px auto;}#download_btn{display:none;}</style>
+</head>
+
+  <body>
+
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Generate Custom QR Code</h1>
+          <p>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Data</span>
+                </div>
+                <textarea class="form-control" id="generate_input" aria-label="With textarea"></textarea>
+                <div class="input-group-append">
+                  <button class="btn btn-dark" id="generate_btn" type="button">Generate</button>
+                  <button class="btn btn-dark" id="download_btn" type="button">Download</button>
+                </div>
+            </div>
+          </p>
+        </div>
+      </section>
+      <div class="container">
+        <div class="row">
+            <div class="box-shadow" id="qrcode"></div>
+            <button class="btn btn-dark" id="download_btn" type="button">Download</button>
+        </div>
+    </div>
+    </main>
+
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/qrcode.js"></script>
+    <script src="scripts/options.js"></script>
+  </body>
+</html>
